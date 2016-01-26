@@ -44,7 +44,7 @@ def get_date_of_image(file):
     return exif_table.get("DateTimeOriginal")
 
 def put_date(file, date):
-    base_img = Image.open(file)
+    base_img = Image.open(file).convert('RGBA')
     txt = Image.new('RGBA', base_img.size, (255, 255, 255, 0))
     draw = ImageDraw.Draw(txt)
     fnt = ImageFont.truetype('./Arial Black.ttf', size=font_size)
