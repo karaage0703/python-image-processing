@@ -24,6 +24,12 @@ under development
 
 I don't know
 
+## Clone software
+Execute below command
+
+~~~~
+$ git clone https://github.com/karaage0703/python-image-processing.git
+~~~~
 # How to use
 
 ## photo-cat.py
