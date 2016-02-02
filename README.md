@@ -26,6 +26,12 @@ I don't know
 
 # How to use
 
-## cat
+## photo-cat.py
+### command
 
-## aa
+### sample image
+
+## photo-exif-date-print.py
+### command
+
+### sample image
