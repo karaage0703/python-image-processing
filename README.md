@@ -35,9 +35,27 @@ $ git clone https://github.com/karaage0703/python-image-processing.git
 ## photo-cat.py
 ### command
 
-### sample image
+### original image
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0001.jpg" alt="image" width="640" height="480">
+
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0002.jpg" alt="image" width="640" height="480">
+
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0003.jpg" alt="image" width="640" height="480">
+
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0004.jpg" alt="image" width="640" height="480">
+
+### processed image
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0005.jpg" alt="image" width="640" height="480">
+
+
+
 
 ## photo-exif-date-print.py
 ### command
 
-### sample image
+### original image
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0004.jpg" alt="image" width="640" height="480">
+
+### processed image
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0006.jpg" alt="image" width="640" height="480">
+
