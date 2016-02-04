@@ -36,7 +36,7 @@ $ git clone https://github.com/karaage0703/python-image-processing.git
 ### command
 
 ### original image
-<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0001.jpg" alt="image" width="480" height="320">
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0001.jpg" alt="image" width="640" height="480">
 
 <img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0002.jpg" alt="image" width="640" height="480">
 
