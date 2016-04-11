@@ -7,14 +7,11 @@ under development
 ## Install Library
 
 ### Mac
-Installing takes few minutes
+Using pyenv is recommended.
 
-~~~~
-$ sudo port -v selfupdate
-$ sudo port install py27-matplotlib
-$ sudo port install py27-numpy
-$ sudo port install py27-scipy
-~~~~
+Refer to following article (Japanese only)
+
+[pyenv setup](http://karaage.hatenadiary.jp/entry/2016/04/04/073000)
 
 ### Linux
 
@@ -59,42 +56,40 @@ $ python photo-cat.py
 ## photo-exif-date-print.py
 
 ### preparation
-copy font file. If you 
-~~~~
+Search font file place of your PC:
+```sh
 $ sudo find / -name "Arial Black.ttf"
-~~~~
-||<
+```
 
 　Mac example
-~~~~
+```
 /Library/Fonts/Arial Black.ttf
-~~~~
+```
 
 　copy font file
-~~~~
+```sh
 $ cp /Library/Fonts/Arial Black.ttf ./
-~~~~
+```
 
 ### command
-~~~~
+```sh
 $ python photo-exif-date-print.py sample.jpg
-~~~~
+```
 
  if you want to process many files. make below script named `photo-exif-date-print.sh`
-~~~~
+```sh
 #!/bin/bash
 for f in *.jpg
 do
     python photo-exif-date-print.py $f
 done
-~~~~
+```
 
- then execute below commands
-~~~~
+ then execute following commands:
+```sh
 $ chmod 755 photo-exif-date-print.sh
 $ ./photo-exif-date-print.sh
-~~~~
-
+```
 
 ### original image
 <img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0004.jpg" alt="image" width="640" height="480">
