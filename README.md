@@ -27,16 +27,16 @@ Execute below command
 ~~~~
 $ git clone https://github.com/karaage0703/python-image-processing.git
 ~~~~
-# How to use
+# Usage
 
 ## photo-cat.py
 ### preparation
 prepare 4 image files named `image-1.jpg` `image-2.jpg` `image-3.jpg` `image-4.jpg`
 
 ### command
-~~~~
+```sh
 $ python photo-cat.py
-~~~~
+```
 
 ### original image
 <img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0001.jpg" alt="image" width="640" height="480">
@@ -49,8 +49,6 @@ $ python photo-cat.py
 
 ### processed image
 <img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0005.jpg" alt="image" width="640" height="480">
-
-
 
 
 ## photo-exif-date-print.py
@@ -97,3 +95,6 @@ $ ./photo-exif-date-print.sh
 ### processed image
 <img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0006.jpg" alt="image" width="640" height="480">
 
+
+# Reference
+- http://venuschjp.blogspot.jp/2015/02/pythonopencv.html
