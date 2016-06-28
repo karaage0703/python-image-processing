@@ -2,33 +2,33 @@
 
 under development
 
-# Preparation
+# Requirements
+- Mac OS X Yosemite or Linux(Ubuntu14.04) are tested
+- python
 
-## Install Library
+## Library
+- PIL
+- OpenCV 2
+- numpy
+- matplotlib
+- scipy
 
-### Mac
-Using pyenv is recommended.
-
-Refer to following article (Japanese only)
-
-[pyenv setup](http://karaage.hatenadiary.jp/entry/2016/04/04/073000)
-
-### Linux
-
-under development
-
-### Windows
-
-I don't know
+Execute following commands for install library:
+```sh
+$ pip install pillow
+$ pip install opencv
+$ pip install numpy
+$ pip install matplotlib
+$ pip install scipy
+```
 
 ## Clone software
 Execute below command
-
-~~~~
+```sh
 $ git clone https://github.com/karaage0703/python-image-processing.git
-~~~~
-# Usage
+```
 
+# Usage
 ## photo-cat.py
 ### preparation
 prepare 4 image files named `image-1.jpg` `image-2.jpg` `image-3.jpg` `image-4.jpg`
