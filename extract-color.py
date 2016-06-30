@@ -29,7 +29,16 @@ if __name__ == '__main__':
         print ("Usage: $ python " + param[0] + " sample.jpg h_min, h_max, s_th, v_th")
         quit()  
     # open image file
-    input_img = cv2.imread(param[1])
+    try:
+        input_img = cv2.imread(param[1])
+    except:
+        print ('faild to load %s' % param[1])
+        quit()
+
+    if input_img is None:
+        print ('faild to load %s' % param[1])
+        quit()
+
     # parameter setting
     h_min = int(param[2])
     h_max = int(param[3])
