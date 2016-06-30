@@ -98,6 +98,7 @@ $ ./photo-exif-date-print.sh
 
 # Reference
 - http://venuschjp.blogspot.jp/2015/02/pythonopencv.html
+- http://tatabox.hatenablog.com/entry/2013/07/15/164015
 
 
 # License
