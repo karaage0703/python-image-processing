@@ -59,7 +59,7 @@ def put_date(file, date):
 if __name__ == '__main__':
     param = sys.argv
     if (len(param) != 2):
-        print ("Usage: $ python " + param[0] + " sample.txt")
+        print ("Usage: $ python " + param[0] + " sample.jpg")
         quit()  
 
     date = get_date_of_image(param[1])
