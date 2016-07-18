@@ -69,7 +69,7 @@ $ sudo find / -name "Arial Black.ttf"
 $ cp /Library/Fonts/Arial Black.ttf ./
 ```
 
-### command
+### usage
 ```sh
 $ python photo-exif-date-print.py sample.jpg
 ```
@@ -95,7 +95,32 @@ $ ./photo-exif-date-print.sh
 ### processed image
 <img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0006.jpg" alt="image" width="640" height="480">
 
-## face_detection
+
+## face_detection.py
+
+### preparation
+Search `haarcascade_frontalface_alt.xml`:
+```sh
+$ sudo find / -name "haarcascade_frontalface_alt.xml"
+```
+
+and copy file to this repository directory
+
+If you cannot find file, please download from web
+
+### usage
+```sh
+$ python face_detection.py sample.jpg
+```
+
+### original image
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0007.jpg" alt="image" width="640" height="480">
+
+### processed image
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0008.jpg" alt="image" width="640" height="480">
+
+
+## face_detection_camera.py
 
 ### caution
 Camera is needed
@@ -105,7 +130,6 @@ Search `haarcascade_frontalface_alt.xml`:
 ```sh
 $ sudo find / -name "haarcascade_frontalface_alt.xml"
 ```
-
 and copy file to this repository directory
 
 If you cannot find file, please download from web
