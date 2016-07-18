@@ -4,7 +4,7 @@ under development
 
 # Requirements
 - Mac OS X Yosemite or Linux(Ubuntu14.04) are tested
-- python
+- python 2.7
 
 ## Library
 - PIL
@@ -23,7 +23,7 @@ $ pip install scipy
 ```
 
 ## Clone software
-Execute below command
+Execute following command:
 ```sh
 $ git clone https://github.com/karaage0703/python-image-processing.git
 ```
@@ -95,6 +95,25 @@ $ ./photo-exif-date-print.sh
 ### processed image
 <img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0006.jpg" alt="image" width="640" height="480">
 
+## face_detection
+
+### caution
+Camera is needed
+
+### preparation
+Search `haarcascade_frontalface_alt.xml`:
+```sh
+$ sudo find / -name "haarcascade_frontalface_alt.xml"
+```
+
+and copy file to this repository directory
+
+If you cannot find file, please download from web
+
+### command
+```sh
+$ python face_detection.py
+```
 
 # Reference
 - http://venuschjp.blogspot.jp/2015/02/pythonopencv.html

@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 import cv2
 cascade_path = "./haarcascade_frontalface_alt.xml"
-image_path = "face-2.jpg"
-
 color = (255, 255, 255) # color of rectangle for face detection
 
 cam = cv2.VideoCapture(0)
@@ -30,4 +28,3 @@ while True:
 
 cam.release()
 cv2.destroyAllWindows()
-
