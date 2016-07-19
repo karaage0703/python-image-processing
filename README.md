@@ -136,7 +136,7 @@ If you cannot find file, please download from web
 
 ### command
 ```sh
-$ python face_detection.py
+$ python face_detection_camera.py
 ```
 
 # Reference
