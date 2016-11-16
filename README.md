@@ -142,6 +142,7 @@ $ python face_detection_camera.py
 # Reference
 - http://venuschjp.blogspot.jp/2015/02/pythonopencv.html
 - http://tatabox.hatenablog.com/entry/2013/07/15/164015
+- https://www.blog.umentu.work/python-opencv3で画素のrgb値を入れ替える/
 
 
 # License
