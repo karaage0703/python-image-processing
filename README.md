@@ -1,6 +1,13 @@
 # python-image-processing
 Useful and simple image processing python scripts
 
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0005.jpg" alt="image" width="320" height="240">
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0006.jpg" alt="image" width="320" height="240">
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0008.jpg" alt="image" width="320" height="240">
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0010.jpg" alt="image" width="320" height="240">
+<img src="https://raw.githubusercontent.com/wiki/karaage0703/python-image-processing/0009.png" alt="image" width="640" height="300">
+
+
 # Requirements
 - Mac OS X Yosemite or Linux(Ubuntu14.04)
 - python 2.7
