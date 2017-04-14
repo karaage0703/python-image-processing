@@ -4,6 +4,7 @@
 - [photo synthesis](./photo_cat.md)
 - [data print to photo by using exif data](./photo_exif_data_print.md)
 - [face detection](./face_detection.md)
+- [sift](./sift.md)
 
 # Reference
 - http://venuschjp.blogspot.jp/2015/02/pythonopencv.html
