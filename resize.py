@@ -13,7 +13,7 @@ if __name__ == '__main__':
     param = sys.argv
     if (len(param) != 4):
         print ("Usage: $ python " + param[0] + " sample.jpg wide_ratio height_ratio")
-        quit()  
+        quit()
 
     # open image file
     try:
