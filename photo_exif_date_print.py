@@ -60,7 +60,7 @@ if __name__ == '__main__':
     param = sys.argv
     if (len(param) != 2):
         print ("Usage: $ python " + param[0] + " sample.jpg")
-        quit()  
+        quit()
 
     date = get_date_of_image(param[1])
     output_img = put_date(param[1], date)

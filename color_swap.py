@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 import cv2
 import sys
-import numpy as np
 
 # extract color function
 def color_swap(src):
     img_bgr = cv2.split(src)
-    dst = cv2.merge((img_bgr[2], img_bgr[1], img_bgr[0]))
+    dst = cv2.merge((img_bgr[2], img_bgr[1], img_bgr[0])) # from BGR to RGB
 
     return dst
 

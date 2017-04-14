@@ -7,7 +7,7 @@ if __name__ == '__main__':
     param = sys.argv
     if (len(param) != 3):
         print ("Usage: $ python " + param[0] + " sample.jpg" "rgb or hsv")
-        quit()  
+        quit()
 
     # open image file
     bgr_img = cv2.imread(param[1])
