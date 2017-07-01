@@ -6,6 +6,7 @@
 - [photo synthesis](./photo_cat.md)
 - [data print to photo by using exif data](./photo_exif_data_print.md)
 - [face detection](./face_detection.md)
+- [face crop](./face_crop.md)
 - [sift](./sift.md)
 - [pillow and numpy basic](./pillow_numpy.md)
 - [color](./color.md)
