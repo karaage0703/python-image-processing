@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import cv2
 import sys
+import os
 from os import path
 import math
 from math import sin, cos
@@ -17,8 +18,12 @@ def face_detect(file):
 
     facerect = cascade_f.detectMultiScale(image_gray, scaleFactor=1.08, minNeighbors=1, minSize=(50, 50))
 
-    print "face rectangle"
-    print facerect
+    # print("face rectangle")
+    # print(facerect)
+    if not os.path.exists("face_images"):
+        os.mkdir("face_images")
+
+    base =  os.path.splitext(os.path.basename(sys.argv[1]))[0] + "_"
 
     if len(facerect) > 0:
         # filename numbering
@@ -30,10 +35,10 @@ def face_detect(file):
             eye_area = image_gray[y + y_offset: y + h, x: x + w]
             eyes = cascade_e.detectMultiScale(eye_area, 1.05)
             eyes = filter(lambda e: (e[0] > w / 2 or e[0] + e[2] < w / 2) and e[1] + e[3] < h / 2, eyes)
-            print(len(eyes))
+            # print(len(eyes))
             if len(eyes) > 0:
                 image_face = image[y:y+h, x:x+h]
-                cv2.imwrite(str("{0:02d}".format(numb)) + "_face_" + file, image_face)
+                cv2.imwrite("face_images/" + base + str("{0:02d}".format(numb)) + ".jpg", image_face)
                 numb += 1
 
 if __name__ == '__main__':
