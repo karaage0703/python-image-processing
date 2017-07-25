@@ -6,11 +6,11 @@ def image_process(src):
     width, height = src.size
     dst = Image.new('RGB', (width, height))
 
-    img_pixels = np.array([[src.getpixel((x,y)) for x in range(width)] for y in range(height)])
+    img_pixels = np.array([[src.getpixel((x,y)) for y in range(height)] for x in range(width)])
 
     for y in range(height):
       for x in range(width):
-          r,g,b = img_pixels[y][x]
+          r,g,b = img_pixels[x][y]
           dst.putpixel((x,y), (r,g,b))
 
     return dst
@@ -35,4 +35,3 @@ if __name__ == '__main__':
     output_img = image_process(input_img)
     output_img.save("process_" + param[1])
     output_img.show()
-
