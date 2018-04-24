@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 import cv2
 import sys
-import numpy as np
 
 def resize(src, w_ratio, h_ratio):
     height = src.shape[0]
     width = src.shape[1]
-    dst = cv2.resize(src,(width/100*w_ratio,height/100*h_ratio))
+    dst = cv2.resize(src,((int)(width/100*w_ratio),(int)(height/100*h_ratio)))
     return dst
 
 if __name__ == '__main__':
