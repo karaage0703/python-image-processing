@@ -11,4 +11,5 @@
 - [pillow and numpy basic](./pillow_numpy.md)
 - [color](./color.md)
 - [filter](./filter.md)
+- [watershed](./watershed.md)
 
