@@ -19,6 +19,7 @@ def get_exif(file,field):
 
     return exif_data
 
+
 def get_exif_of_image(file):
     im = Image.open(file)
 
@@ -34,9 +35,11 @@ def get_exif_of_image(file):
 
     return exif_table
 
+
 def get_date_of_image(file):
     exif_table = get_exif_of_image(file)
     return exif_table.get("DateTimeOriginal")
+
 
 def put_date(file, date):
     base_img_cv2 = cv2.imread(file)
@@ -56,13 +59,17 @@ def put_date(file, date):
     output_img = cv2.addWeighted(base_img_cv2, 1.0, txt_array, 1.0, 0)
     return output_img
 
+
 if __name__ == '__main__':
     param = sys.argv
     if (len(param) != 2):
         print ("Usage: $ python " + param[0] + " sample.jpg")
         quit()
 
-    date = get_date_of_image(param[1])
-    output_img = put_date(param[1], date)
-    cv2.imwrite(date + "_" + param[1], output_img)
-    # cv2.imwrite('exifdata_' + param[1], output_img)
+    try:
+        date = get_date_of_image(param[1])
+        output_img = put_date(param[1], date)
+        cv2.imwrite(date + "_" + param[1], output_img)
+    except:
+        base_img_cv2 = cv2.imread(param[1])
+        cv2.imwrite("nodate_" + param[1], base_img_cv2)
