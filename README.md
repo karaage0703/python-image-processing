@@ -9,8 +9,9 @@ Useful and simple image processing python scripts
 
 
 # Requirements
-- Mac OS X Yosemite or Linux(Ubuntu14.04)
-- python 2.7
+- Mac OS X or Linux
+- Python3(Recommended)
+- Python2
 
 # Preparation
 ## Library
