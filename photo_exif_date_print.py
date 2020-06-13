@@ -69,7 +69,7 @@ if __name__ == '__main__':
     try:
         date = get_date_of_image(param[1])
         output_img = put_date(param[1], date)
-        cv2.imwrite(date + "_" + param[1], output_img)
+        cv2.imwrite(date.replace(':','_').replace(' ','_') + "_" + param[1], output_img)
     except:
         base_img_cv2 = cv2.imread(param[1])
         cv2.imwrite("nodate_" + param[1], base_img_cv2)
