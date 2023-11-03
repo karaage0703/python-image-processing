@@ -6,7 +6,7 @@ import numpy as np
 if __name__ == '__main__':
     param = sys.argv
     if (len(param) != 3):
-        print ("Usage: $ python " + param[0] + " sample.jpg" "rgb or hsv")
+        print("Usage: $ python " + param[0] + " sample.jpg" "rgb or hsv")
         quit()
 
     # open image file

@@ -11,8 +11,8 @@ def face_detect(file):
     cascade = cv2.CascadeClassifier(cascade_path)
     facerect = cascade.detectMultiScale(image_gray, scaleFactor=1.1, minNeighbors=1, minSize=(1, 1))
 
-    print "face rectangle"
-    print facerect
+    print("face rectangle")
+    print(facerect)
 
     if len(facerect) > 0:
         for rect in facerect:
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     param = sys.argv
     if (len(param) != 2):
         print ("Usage: $ python " + param[0] + " sample.jpg")
-        quit()  
+        quit()
 
     output_img = face_detect(param[1])
     cv2.imwrite('facedetect_' + param[1], output_img)
