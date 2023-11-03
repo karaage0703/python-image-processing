@@ -38,7 +38,7 @@ def detect(img, filename):
         M = cv2.getRotationMatrix2D((hypot * 0.5, hypot * 0.5), deg, 1.0)
         rotated = cv2.warpAffine(frame, M, (hypot, hypot))
         faces = cascade_f.detectMultiScale(rotated, 1.08, 2)
-        print deg, len(faces)
+        print(deg, len(faces))
         for face in faces:
             x, y, w, h = face
             # eyes in face?

@@ -19,8 +19,8 @@ def face_detect(file):
     # facerect = cascade_f.detectMultiScale(image_gray, scaleFactor=1.08, minNeighbors=1, minSize=(50, 50))
     facerect = cascade_f.detectMultiScale(image_gray, scaleFactor=1.08, minNeighbors=1, minSize=(200, 200))
 
-    print "face rectangle"
-    print facerect
+    print("face rectangle")
+    print(facerect)
 
     # test_image = image
 

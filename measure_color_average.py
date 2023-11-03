@@ -34,4 +34,4 @@ if __name__ == '__main__':
         # save HSV format
         print(str(average_hsv[0])+","+str(average_hsv[1])+","+str(average_hsv[2]))
     else:
-        print "Option is wrong. please select rgb or hsv"
+        print("Option is wrong. please select rgb or hsv")
